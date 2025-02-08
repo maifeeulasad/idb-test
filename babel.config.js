@@ -1,9 +1,5 @@
-export default {
-    presets: [
-      ['@babel/preset-env', { targets: "defaults" }]
-    ],
-    plugins: [
-      ['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }],
-      '@babel/plugin-proposal-class-properties'
-    ]
-  };
+export const presets = ["@babel/preset-react"];
+export const plugins = [
+  ["@babel/plugin-proposal-decorators", { version: "legacy" }],
+  ["@babel/plugin-proposal-class-properties", { loose: true }]
+];
